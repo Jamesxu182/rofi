@@ -83,6 +83,7 @@ SOURCES=\
 	source/dialogs/dmenu.c\
 	source/dialogs/combi.c\
 	source/dialogs/window.c\
+	source/dialogs/wifi.c\
 	source/dialogs/script.c\
 	source/dialogs/help-keys.c\
 	include/display.h\
@@ -117,6 +118,7 @@ SOURCES=\
 	include/dialogs/combi.h\
 	include/dialogs/script.h\
 	include/dialogs/window.h\
+	include/dialogs/wifi.h\
 	include/dialogs/dialogs.h\
 	include/dialogs/help-keys.h\
 	resources/resources.c\
@@ -137,6 +139,7 @@ rofi_CFLAGS=\
 	$(libsn_CFLAGS)\
 	$(cairo_CFLAGS)\
 	$(librsvg_CFLAGS)\
+	$(libnm_CFLAGS)\
 	-DMANPAGE_PATH="\"$(mandir)/\""\
 	-I$(top_srcdir)/include/\
 	-I$(top_builddir)/lexer/\
@@ -158,6 +161,7 @@ rofi_LDADD=\
 	$(pango_LIBS)\
 	$(cairo_LIBS)\
 	$(librsvg_LIBS)\
+	$(libnm_LIBS)\
 	$(LIBS)
 
 ##

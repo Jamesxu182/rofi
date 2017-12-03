@@ -530,6 +530,7 @@ static void rofi_collect_modi ( void )
 #endif
     rofi_collect_modi_add ( &run_mode );
     rofi_collect_modi_add ( &ssh_mode );
+    rofi_collect_modi_add ( &wifi_mode );
 #ifdef ENABLE_DRUN
     rofi_collect_modi_add ( &drun_mode );
 #endif
